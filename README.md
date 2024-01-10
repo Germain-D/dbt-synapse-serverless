@@ -31,7 +31,7 @@ This is not published to PyPI.
 
 To install this forked version:
 ```sh
-pip install git+https://github.com/daihuynh/dbt-synapse-serverless.git
+pip install git+https://github.com/r-vlingen/dbt-synapse-serverless.git
 ```
 
 ### Caveats
