@@ -31,7 +31,7 @@ description = """
     An Azure Synapse adpter plugin for dbt (data build tool) for serverless pools
 """
 
-dbt_version = '1.4'
+dbt_version = '1.8'
 # the package version should be the dbt version, with maybe some things on the
 # ends of it. (0.18.1 vs 0.18.1a1, 0.18.1.1, ...)
 if not package_version.startswith(dbt_version):
@@ -53,6 +53,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        "dbt-synapse~=1.4"
+        "dbt-synapse~=1.8"
     ]
 )
