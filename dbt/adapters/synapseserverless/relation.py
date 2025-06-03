@@ -1,6 +1,5 @@
 from typing import Optional
-
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from dbt.adapters.base.relation import BaseRelation, Policy
 from dbt.exceptions import DbtRuntimeError
@@ -14,4 +13,4 @@ class SynapseServerlessIncludePolicy(Policy):
 
 @dataclass(frozen=True, eq=False, repr=False)
 class SynapseServerlessRelation(BaseRelation):
-    include_policy: SynapseServerlessIncludePolicy = SynapseServerlessIncludePolicy()
+    include_policy: SynapseServerlessIncludePolicy = field(default_factory=SynapseServerlessIncludePolicy)

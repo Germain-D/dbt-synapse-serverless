@@ -1,6 +1,5 @@
-
 name: dbt_synapseserverless
-version: 1.0
+version: 1.9.0
 
 config-version: 2
 

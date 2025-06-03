@@ -31,7 +31,7 @@ This is not published to PyPI.
 
 To install this forked version:
 ```sh
-pip install git+https://github.com/r-vlingen/dbt-synapse-serverless.git
+pip install git+https://github.com/germain-d/dbt-synapse-serverless.git
 ```
 
 ### Caveats
@@ -52,7 +52,7 @@ jaffle_shop:
   outputs:
     serverless:
       type: synapseserverless
-      driver: "ODBC Driver 17 for SQL Server"
+      driver: "ODBC Driver 18 for SQL Server"
       schema: dbo
       host: <serverlessendpoint>
       database: <serverlessdb>

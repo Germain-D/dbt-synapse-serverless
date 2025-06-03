@@ -10,7 +10,7 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 
 
 package_name = "dbt-synapse-serverless"
-authors_list = ["Nandan Hegde", "Chaerin Lee", "Alieu Sanneh", "Anders Swanson", "Austin Huynh"]
+authors_list = ["Nandan Hegde", "Chaerin Lee", "Alieu Sanneh", "Anders Swanson", "Austin Huynh", "Germain Deffontaines"]
 
 
 # get this from a separate file
@@ -31,7 +31,7 @@ description = """
     An Azure Synapse adpter plugin for dbt (data build tool) for serverless pools
 """
 
-dbt_version = '1.8'
+dbt_version = '1.9'
 # the package version should be the dbt version, with maybe some things on the
 # ends of it. (0.18.1 vs 0.18.1a1, 0.18.1.1, ...)
 if not package_version.startswith(dbt_version):
@@ -48,11 +48,11 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     author=", ".join(authors_list),
-    author_email="swanson.anders@gmail.com",
-    url="https://github.com/dbt-msft/dbt-synapse-serverless",
+    author_email="germain.d.dev@gmail.com",
+    url="https://github.com/germain-d/dbt-synapse-serverless",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        "dbt-synapse~=1.8"
+        "dbt-synapse~=1.8.3"
     ]
 )
